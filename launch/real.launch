@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="use_sim_time" value="false"/>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find sawyer_description)/urdf/sawyer.urdf.xacro' electric_gripper:='true' l_finger_tip:='half_round_tip'" />
+  <node pkg="rviz" type="rviz" name="sim_rviz" output="screen" required="true" args="-d $(find fri_rviz)/rviz_cfg/real.rviz" />
+</launch>
