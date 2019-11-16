@@ -1,6 +1,16 @@
 <?xml version="1.0"?>
 <launch>
-  <param name="use_sim_time" value="false"/>
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find sawyer_description)/urdf/sawyer.urdf.xacro' electric_gripper:='true' l_finger_tip:='half_round_tip'" />
-  <node pkg="rviz" type="rviz" name="sim_rviz" output="screen" required="true" args="-d $(find fri_rviz)/rviz_cfg/real.rviz" />
+
+  <param name="ghost_description" textfile="$(find fri_rviz)/sawyer_ghost.urdf" />
+  <param name="alexei_ghost_tf_prefix" value="/alexei/ghost" />
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="rob_st_pub" >
+    <remap from="robot_description" to="ghost_description" />
+    <remap from="joint_states" to="/alexei/ghost/joint/states" />
+    <remap from="tf_prefix" to="alexei_ghost_tf_prefix" />
+  </node>
+
+  <node pkg="tf" type="static_transform_publisher" name="map_to_alexei_ghost" args="0.0 0.0 0.0 0.0 0.0 0.0 1.0 alexei/base alexei/ghost/base 100" />
+
+  <node pkg="rviz" type="rviz" name="real_rviz" output="screen" required="true" args="-d $(find fri_rviz)/rviz_cfg/real.rviz" />
+
 </launch>

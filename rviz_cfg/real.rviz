@@ -1,18 +1,17 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 78
+    Help Height: 96
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RobotModel1
-        - /RobotModel2
-        - /PointCloud21
+        - /RobotModel Alexei Ghost1
         - /TF1
         - /TF1/Frames1
-      Splitter Ratio: 0.5
-    Tree Height: 565
+        - /PointCloud21
+      Splitter Ratio: 0.789598107
+    Tree Height: 695
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -31,7 +30,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud2
+    SyncSource: ""
 Toolbars:
   toolButtonStyle: 2
 Visualization Manager:
@@ -58,18 +57,174 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
-      Enabled: false
+      Enabled: true
       Links:
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-      Name: RobotModel
+        base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        controller_box:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pedestal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pedestal_feet:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_arm_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_arm_itb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_connector_plate_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_connector_plate_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_electric_gripper_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_gripper_l_finger:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_l_finger_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_r_finger:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_r_finger_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_hand_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_l0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l1_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l2_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l4_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_torso_itb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_wrist:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        screen:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        torso:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel Anna
       Robot Description: robot_description
       TF Prefix: anna
       Update Interval: 0
-      Value: false
+      Value: true
       Visual Enabled: true
     - Alpha: 1
       Class: rviz/RobotModel
@@ -237,42 +392,184 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-      Name: RobotModel
+      Name: RobotModel Alexei
       Robot Description: robot_description
       TF Prefix: alexei
       Update Interval: 0
       Value: true
       Visual Enabled: true
     - Alpha: 1
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 10
-        Min Value: -10
-        Value: true
-      Axis: Z
-      Channel Name: intensity
-      Class: rviz/PointCloud2
-      Color: 255; 255; 255
-      Color Transformer: RGB8
-      Decay Time: 0
+      Class: rviz/RobotModel
+      Collision Enabled: false
       Enabled: true
-      Invert Rainbow: false
-      Max Color: 255; 255; 255
-      Max Intensity: 4096
-      Min Color: 0; 0; 0
-      Min Intensity: 0
-      Name: PointCloud2
-      Position Transformer: XYZ
-      Queue Size: 10
-      Selectable: true
-      Size (Pixels): 3
-      Size (m): 0.00999999978
-      Style: Flat Squares
-      Topic: /kinect1/qhd/points
-      Unreliable: false
-      Use Fixed Frame: true
-      Use rainbow: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        controller_box:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pedestal:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pedestal_feet:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_arm_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_arm_itb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_connector_plate_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_connector_plate_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_electric_gripper_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_gripper_l_finger:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_l_finger_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_r_finger:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_r_finger_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_gripper_tip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_hand_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_l0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l1_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l2_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l4_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_l6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_torso_itb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_wrist:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        screen:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        torso:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel Alexei Ghost
+      Robot Description: ghost_description
+      TF Prefix: alexei/ghost
+      Update Interval: 0
       Value: true
+      Visual Enabled: true
     - Class: rviz/TF
       Enabled: true
       Frame Timeout: 15
@@ -282,10 +579,74 @@ Visualization Manager:
           Value: true
         alexei/controller_box:
           Value: false
+        alexei/ghost/base:
+          Value: false
+        alexei/ghost/controller_box:
+          Value: false
+        alexei/ghost/head:
+          Value: false
+        alexei/ghost/head_camera:
+          Value: false
+        alexei/ghost/pedestal:
+          Value: false
+        alexei/ghost/pedestal_feet:
+          Value: false
+        alexei/ghost/right_arm_base_link:
+          Value: false
+        alexei/ghost/right_arm_itb:
+          Value: false
+        alexei/ghost/right_connector_plate_base:
+          Value: false
+        alexei/ghost/right_connector_plate_mount:
+          Value: false
+        alexei/ghost/right_electric_gripper_base:
+          Value: false
+        alexei/ghost/right_gripper_base:
+          Value: false
+        alexei/ghost/right_gripper_l_finger:
+          Value: false
+        alexei/ghost/right_gripper_l_finger_tip:
+          Value: false
+        alexei/ghost/right_gripper_r_finger:
+          Value: false
+        alexei/ghost/right_gripper_r_finger_tip:
+          Value: false
+        alexei/ghost/right_gripper_tip:
+          Value: true
+        alexei/ghost/right_hand:
+          Value: false
+        alexei/ghost/right_hand_camera:
+          Value: false
+        alexei/ghost/right_l0:
+          Value: false
+        alexei/ghost/right_l1:
+          Value: false
+        alexei/ghost/right_l1_2:
+          Value: false
+        alexei/ghost/right_l2:
+          Value: false
+        alexei/ghost/right_l2_2:
+          Value: false
+        alexei/ghost/right_l4:
+          Value: false
+        alexei/ghost/right_l4_2:
+          Value: false
+        alexei/ghost/right_l5:
+          Value: false
+        alexei/ghost/right_l6:
+          Value: false
+        alexei/ghost/right_torso_itb:
+          Value: false
+        alexei/ghost/right_wrist:
+          Value: false
+        alexei/ghost/screen:
+          Value: false
+        alexei/ghost/torso:
+          Value: false
         alexei/head:
           Value: false
         alexei/head_camera:
-          Value: true
+          Value: false
         alexei/pedestal:
           Value: false
         alexei/pedestal_feet:
@@ -377,7 +738,7 @@ Visualization Manager:
         alexei/right_gripper_r_finger_tip:
           Value: false
         alexei/right_gripper_tip:
-          Value: false
+          Value: true
         alexei/right_hand:
           Value: false
         alexei/right_hand_camera:
@@ -408,36 +769,163 @@ Visualization Manager:
           Value: false
         alexei/screen:
           Value: false
-        alexei/t50:
-          Value: false
         alexei/torso:
           Value: false
-        head_camera:
+        anna/base:
           Value: false
-        kinect1/t50:
+        anna/controller_box:
+          Value: false
+        anna/head:
+          Value: false
+        anna/head_camera:
+          Value: false
+        anna/pedestal:
+          Value: false
+        anna/pedestal_feet:
+          Value: false
+        anna/reference/base:
+          Value: false
+        anna/reference/controller_box:
+          Value: false
+        anna/reference/head:
+          Value: false
+        anna/reference/head_camera:
+          Value: false
+        anna/reference/pedestal:
+          Value: false
+        anna/reference/pedestal_feet:
+          Value: false
+        anna/reference/right_arm_base_link:
+          Value: false
+        anna/reference/right_arm_itb:
+          Value: false
+        anna/reference/right_connector_plate_base:
+          Value: false
+        anna/reference/right_connector_plate_mount:
+          Value: false
+        anna/reference/right_electric_gripper_base:
+          Value: false
+        anna/reference/right_gripper_base:
+          Value: false
+        anna/reference/right_gripper_l_finger:
+          Value: false
+        anna/reference/right_gripper_l_finger_tip:
+          Value: false
+        anna/reference/right_gripper_r_finger:
+          Value: false
+        anna/reference/right_gripper_r_finger_tip:
+          Value: false
+        anna/reference/right_gripper_tip:
           Value: true
-        kinect1_rgb_optical_frame:
-          Value: true
-        kinect2/t50:
-          Value: true
-        kinect2_rgb_optical_frame:
-          Value: true
-        kinect3/t50:
-          Value: true
-        kinect3_rgb_optical_frame:
-          Value: true
+        anna/reference/right_hand:
+          Value: false
+        anna/reference/right_hand_camera:
+          Value: false
+        anna/reference/right_l0:
+          Value: false
+        anna/reference/right_l1:
+          Value: false
+        anna/reference/right_l1_2:
+          Value: false
+        anna/reference/right_l2:
+          Value: false
+        anna/reference/right_l2_2:
+          Value: false
+        anna/reference/right_l3:
+          Value: false
+        anna/reference/right_l4:
+          Value: false
+        anna/reference/right_l4_2:
+          Value: false
+        anna/reference/right_l5:
+          Value: false
+        anna/reference/right_l6:
+          Value: false
+        anna/reference/right_torso_itb:
+          Value: false
+        anna/reference/right_wrist:
+          Value: false
+        anna/reference/screen:
+          Value: false
+        anna/reference/torso:
+          Value: false
+        anna/right_arm_base_link:
+          Value: false
+        anna/right_arm_itb:
+          Value: false
+        anna/right_connector_plate_base:
+          Value: false
+        anna/right_connector_plate_mount:
+          Value: false
+        anna/right_electric_gripper_base:
+          Value: false
+        anna/right_gripper_base:
+          Value: false
+        anna/right_gripper_l_finger:
+          Value: false
+        anna/right_gripper_l_finger_tip:
+          Value: false
+        anna/right_gripper_r_finger:
+          Value: false
+        anna/right_gripper_r_finger_tip:
+          Value: false
+        anna/right_gripper_tip:
+          Value: false
+        anna/right_hand:
+          Value: false
+        anna/right_hand_camera:
+          Value: false
+        anna/right_l0:
+          Value: false
+        anna/right_l1:
+          Value: false
+        anna/right_l1_2:
+          Value: false
+        anna/right_l2:
+          Value: false
+        anna/right_l2_2:
+          Value: false
+        anna/right_l3:
+          Value: false
+        anna/right_l4:
+          Value: false
+        anna/right_l4_2:
+          Value: false
+        anna/right_l5:
+          Value: false
+        anna/right_l6:
+          Value: false
+        anna/right_torso_itb:
+          Value: false
+        anna/right_wrist:
+          Value: false
+        anna/screen:
+          Value: false
+        anna/torso:
+          Value: false
         map:
           Value: false
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: false
+      Show Names: true
       Tree:
         map:
           alexei/base:
             alexei/controller_box:
               {}
+            alexei/ghost/base:
+              alexei/ghost/controller_box:
+                {}
+              alexei/ghost/pedestal:
+                {}
+              alexei/ghost/pedestal_feet:
+                {}
+              alexei/ghost/right_arm_base_link:
+                {}
+              alexei/ghost/torso:
+                {}
             alexei/pedestal:
               {}
             alexei/pedestal_feet:
@@ -490,9 +978,7 @@ Visualization Manager:
               alexei/right_l0:
                 alexei/head:
                   alexei/head_camera:
-                    head_camera:
-                      alexei/t50:
-                        {}
+                    {}
                   alexei/screen:
                     {}
                 alexei/right_l1:
@@ -530,16 +1016,130 @@ Visualization Manager:
                   {}
             alexei/torso:
               {}
-            kinect1_rgb_optical_frame:
-              kinect1/t50:
+          anna/base:
+            anna/controller_box:
+              {}
+            anna/pedestal:
+              {}
+            anna/pedestal_feet:
+              {}
+            anna/reference/base:
+              anna/reference/controller_box:
                 {}
-            kinect2_rgb_optical_frame:
-              kinect2/t50:
+              anna/reference/pedestal:
                 {}
-            kinect3_rgb_optical_frame:
-              kinect3/t50:
+              anna/reference/pedestal_feet:
                 {}
+              anna/reference/right_arm_base_link:
+                anna/reference/right_l0:
+                  anna/reference/head:
+                    anna/reference/head_camera:
+                      {}
+                    anna/reference/screen:
+                      {}
+                  anna/reference/right_l1:
+                    anna/reference/right_l1_2:
+                      {}
+                    anna/reference/right_l2:
+                      anna/reference/right_l2_2:
+                        {}
+                      anna/reference/right_l3:
+                        anna/reference/right_l4:
+                          anna/reference/right_arm_itb:
+                            {}
+                          anna/reference/right_l4_2:
+                            {}
+                          anna/reference/right_l5:
+                            anna/reference/right_hand_camera:
+                              {}
+                            anna/reference/right_l6:
+                              anna/reference/right_hand:
+                                anna/reference/right_gripper_base:
+                                  anna/reference/right_connector_plate_base:
+                                    anna/reference/right_connector_plate_mount:
+                                      anna/reference/right_electric_gripper_base:
+                                        {}
+                                  anna/reference/right_gripper_tip:
+                                    {}
+                            anna/reference/right_wrist:
+                              {}
+                  anna/reference/right_torso_itb:
+                    {}
+              anna/reference/torso:
+                {}
+            anna/right_arm_base_link:
+              anna/right_l0:
+                anna/head:
+                  anna/head_camera:
+                    {}
+                  anna/screen:
+                    {}
+                anna/right_l1:
+                  anna/right_l1_2:
+                    {}
+                  anna/right_l2:
+                    anna/right_l2_2:
+                      {}
+                    anna/right_l3:
+                      anna/right_l4:
+                        anna/right_arm_itb:
+                          {}
+                        anna/right_l4_2:
+                          {}
+                        anna/right_l5:
+                          anna/right_hand_camera:
+                            {}
+                          anna/right_l6:
+                            anna/right_hand:
+                              anna/right_gripper_base:
+                                anna/right_connector_plate_base:
+                                  anna/right_connector_plate_mount:
+                                    anna/right_electric_gripper_base:
+                                      anna/right_gripper_l_finger:
+                                        anna/right_gripper_l_finger_tip:
+                                          {}
+                                      anna/right_gripper_r_finger:
+                                        anna/right_gripper_r_finger_tip:
+                                          {}
+                                anna/right_gripper_tip:
+                                  {}
+                          anna/right_wrist:
+                            {}
+                anna/right_torso_itb:
+                  {}
+            anna/torso:
+              {}
       Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.00999999978
+      Style: Flat Squares
+      Topic: /alexei/filtered_point_cloud2
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
       Value: true
   Enabled: true
   Global Options:
@@ -566,7 +1166,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.54597664
+      Distance: 3.89239264
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -581,18 +1181,18 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.545398653
+      Pitch: 0.645398438
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.43538761
+      Yaw: 6.26357841
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 846
+  Height: 998
   Hide Left Dock: false
-  Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000016a000002c4fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006100fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000028000002c4000000d700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f000002c4fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a005600690065007700730100000028000002c4000000ad00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004b00000003efc0100000002fb0000000800540069006d00650100000000000004b00000030000fffffffb0000000800540069006d006501000000000000045000000000000000000000022b000002c400000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Hide Right Dock: true
+  QMainWindow State: 000000ff00000000fd0000000400000000000001b600000358fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006100fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000358000000d700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000011e00000358fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000002800000358000000ad00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004eb00000042fc0100000002fb0000000800540069006d00650100000000000004eb0000030000fffffffb0000000800540069006d006501000000000000045000000000000000000000032f0000035800000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -600,7 +1200,7 @@ Window Geometry:
   Tool Properties:
     collapsed: false
   Views:
-    collapsed: false
-  Width: 1200
-  X: 219
-  Y: 69
+    collapsed: true
+  Width: 1259
+  X: 421
+  Y: 24
